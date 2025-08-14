@@ -1,15 +1,24 @@
-<main style="background-color: indigo;">
-    <section>
+<main>
+    <section class="form-section">
         <!-- Correct path without leading slash -->
         <img src="/assets/logo.png"/>
-        <h2></h2>
-        <button></button>
+        <h2>{{title}}</h2>
+        <ng-content></ng-content>
+        <div class="button-wrapper">
+            <button class="button-primary">{{ primaryButtonText }}</button>
         <div>
-            <span>or</span>
+        <div>
+            <span class="divider">
+                <div></div>
+                or
+                <div></div>
+            </span>
         </div>
-        <button></button>
+        </div>
+        <button class="button-secondary">{{ secondaryButtonText }}</button>
+        </div>
     </section>
-    <section>
+    <section class="main-section">
         <h1>You should compete!!</h1>
         <!-- Fixed img tag with proper src -->
         <img src="assets/main-illustration.png" alt="Competition"/>
